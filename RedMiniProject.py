@@ -1,22 +1,22 @@
 #Create Empty List 
-List = []
+AWS_List = []
 
 #Populate List Using Append
-List.append("Ec2")
-List.append("DynamoDb")
-List.append("s3")
-List.append("Lambda")
-List.append("Cloud9")
+AWS_List.append("Ec2")
+AWS_List.append("DynamoDb")
+AWS_List.append("s3")
+AWS_List.append("Lambda")
+AWS_List.append("Cloud9")
 
 #Print list and length of the list
-print(List)
-print(len(List))
+print(AWS_List)
+print(len(AWS_List))
 
 #Remove 2 Specific Services From The List By Name
-List.remove("Ec2")
-List.remove("Lambda")
+AWS_List.del("Ec2")
+AWS_List.del("Lambda")
 
 #Print new list and new length of list
-print(List)
-print(len(List))
+print(AWS_List)
+print(len(AWS_List))
 
