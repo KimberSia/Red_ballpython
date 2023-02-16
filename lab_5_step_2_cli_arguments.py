@@ -1,23 +1,10 @@
-import boto3
-
-def translate_text(**kwargs): 
-    client = boto3.client('translate')
-    response = client.translate_text(**kwargs)
-    print(response) 
-
-### Change below this line only ###
-
-text = input("Provide the text you want translating: ")
-source_language_code = input("Provide the two letter source language code: ")
-target_language_code = input("Provide the two letter target language code: ") 
+def open_input(file):
+    with open(file, 'r') as f:
+        text = f.read() #We use read() to read the actual contents of the file
+        print(text)
 
 def main():
-    translate_text(
-        Text=text, 
-        SourceLanguageCode=source_language_code,
-        TargetLanguageCode=target_language_code
-        )
+    open_input("text.txt")
 
 if __name__=="__main__":
     main()
-    
